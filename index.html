@@ -12,13 +12,14 @@
             <div class="Satelite"> 📡</div>
             <h2 id="texto">Enlace Satelital </h2>
             <h4 id="coordenadas"></h4>
-            <button id="ActivarRastreo"> Activar Rastreo</button>
+            <button onclick="ActivarRastreo()"> Activar Rastreo</button>
 
         </div>
     </body>
 
     <script>
-            document.getElementById('ActivarRastreo').addEventListener('click', () => {
+        function ActivarRastreo() {
+            //document.getElementById('ActivarRastreo').addEventListener('click', () => {
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(
                         // Éxito:
@@ -36,7 +37,7 @@
                 } else {
                     alert("La geolocalización no es soportada por tu navegador.");
                 }
-            });
+            };
             //document.getElementById("coordenadas").innerHTML="Tus coordenadas son: ";
             //<iframe src="https://b.example.com" allow="geolocation"></iframe>
             
@@ -49,5 +50,5 @@
             //console.log(`Latitude: ${crd.latitude}`);
             //console.log(`Longitude: ${crd.longitude}`);
         
-           
+        
     </script>
