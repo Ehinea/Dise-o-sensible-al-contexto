@@ -30,7 +30,7 @@ transition: border-color 0.3s;
 border-color: #4CAF50;
 outline: none;
 }*/
-#button {
+button {
 background-color: #000000;
 color: white;
 border: none;
@@ -45,7 +45,7 @@ transition: background-color 0.3s;
 position: absolute;
 top: 80%;
 }
-#button:hover {
+button:hover {
 background-color: #6390f0;
 }
 
