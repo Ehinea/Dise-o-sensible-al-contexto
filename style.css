@@ -63,7 +63,7 @@ top: 130px;
 margin-top: 20px;
 font-size: 1rem;
 font-weight: bold;
-color: #bb2323;
+color: #000000;
 min-height: 30px; /* Evita que la tarjeta brinque */
 position: absolute;
 top: 180px;
@@ -71,6 +71,10 @@ top: 180px;
 
 #conexion {
     color: #23bb35;
+}
+
+#error {
+    color: #bb2323;
 }
 
 .Satelite {

@@ -13,6 +13,7 @@
             <h2 id="texto">Enlace Satelital </h2>
             <h4 id="coordenadas"></h4>
             <h3 id="conexion"></h3>
+            <h3 id="error"></h3>
             <button id="ActivarRastreo"> Activar Rastreo</button>
 
         </div>
@@ -38,7 +39,7 @@
                         },
                         // Error/Denegación:
                         (error) => {
-                            document.getElementById('coordenadas').innerText = 
+                            document.getElementById('error').innerText = 
                                 "Permiso denegado o ubicación no disponible.";
                             console.error(error);
                         }
