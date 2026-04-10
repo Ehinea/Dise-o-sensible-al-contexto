@@ -12,6 +12,7 @@
             <div class="Satelite"> 📡</div>
             <h2 id="texto">Enlace Satelital </h2>
             <h4 id="coordenadas"></h4>
+            <h3 id="conexion"></h3>
             <button id="ActivarRastreo"> Activar Rastreo</button>
 
         </div>
@@ -23,7 +24,7 @@
                     navigator.geolocation.getCurrentPosition(
                         // Éxito:
                         (position) => {
-                            document.getElementById('coordenadas').innerText = 
+                            document.getElementById('conexion').innerText = 
                                 "¡Conexión establecida!";
                             document.getElementById('coordenadas').innerText =     
                                 `Lat: ${position.coords.latitude}, Lon: ${position.coords.longitude}`;
