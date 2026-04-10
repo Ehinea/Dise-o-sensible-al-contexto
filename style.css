@@ -66,14 +66,16 @@ font-weight: bold;
 color: #000000;
 min-height: 30px; /* Evita que la tarjeta brinque */
 position: absolute;
-top: 180px;
+top: 190px;
 }
 
 #conexion {
     color: #23bb35;
+    position: absolute;
+    top: 170px;
 }
 
-#error {
+#error1 {
     color: #bb2323;
 }
 
