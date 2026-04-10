@@ -18,13 +18,13 @@
     </body>
 
     <script>
-        //function ActivarRastreo() {
             document.getElementById('ActivarRastreo').addEventListener('click', () => {
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(
                         // Éxito:
                         (position) => {
                             document.getElementById('coordenadas').innerText = 
+                                "¡Conexión establecida!";
                                 `Lat: ${position.coords.latitude}, Lon: ${position.coords.longitude}`;
                         },
                         // Error/Denegación:
@@ -38,7 +38,7 @@
                     alert("La geolocalización no es soportada por tu navegador.");
                 }
             });
-            //};
+            
             //document.getElementById("coordenadas").innerHTML="Tus coordenadas son: ";
             //<iframe src="https://b.example.com" allow="geolocation"></iframe>
             
