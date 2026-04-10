@@ -24,10 +24,17 @@
                     navigator.geolocation.getCurrentPosition(
                         // Éxito:
                         (position) => {
+                            let lat = position.coords.latitude;
+                            let lon = position.coords.longitude;
+
+                            // Redondear a 4 decimales (aprox 11 metros de precisión)
+                            let latTruncada = lat.toFixed(4); 
+                            let lonTruncada = lon.toFixed(4);
+                            
                             document.getElementById('conexion').innerText = 
                                 "¡Conexión establecida!";
                             document.getElementById('coordenadas').innerText =     
-                                `Lat: ${position.coords.latitude}, Lon: ${position.coords.longitude}`;
+                                `Lat: ${latTruncada}, Lon: ${lonTruncada}`;
                         },
                         // Error/Denegación:
                         (error) => {
