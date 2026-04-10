@@ -14,22 +14,8 @@ border-radius: 15px;
 box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 text-align: center;
 width: 300px;
+}
 
-}
-/*input {
-width: 80%;
-padding: 10px;
-margin: 10px 0;
-border: 2px solid #ddd;
-border-radius: 8px;
-font-size: 1rem;
-text-align: center;
-transition: border-color 0.3s;
-}
-/*input:focus {
-border-color: #4CAF50;
-outline: none;
-}*/
 #ActivarRastreo {
 background-color: #000000;
 color: white;
